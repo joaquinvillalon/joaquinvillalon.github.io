@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Fotos - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #252525;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero {
+            background-color: #000000;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #c9c9c9;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 80%; 
+                margin-bottom: 1rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="download.html">Descargar</a></li>
+                <li><a href="details.html">Detalles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a App Fotos</h1>
+            <p>La red social perfecta para compartir tus momentos favoritos con el mundo.</p>
+            <a href="download.html" class="cta-button">Descargar la App</a>
+        </section>
+        <section class="gallery">
+            <img src="imagen1.png" alt="Vista de la app 1">
+            <img src="imagen2.png" alt="Vista de la app 2">
+            <img src="imagen3.png" alt="Vista de la app 3">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 App Fotos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
